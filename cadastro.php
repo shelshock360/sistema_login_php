@@ -1,4 +1,3 @@
-
 <?php
 session_start();
 ?>
@@ -21,33 +20,36 @@ session_start();
         <div class="hero-body">
             <div class="container has-text-centered">
                 <div class="column is-4 is-offset-4">
-                    <h3 class="title has-text-grey">Sistema de Cadastro</h3>
-                    <h3 class="title has-text-grey"><a href="https://youtube.com/canaltioficial" target="_blank">Canal TI</a></h3>
+                    <h3 class="title has-text-grey">Sistema de Login</h3>
+                    <h3 class="title has-text-grey"><a href="http://php.net/" target="_blank">PHP</a></h3>
+                    <a href="https://www.php.net/manual/pt_BR/">
+                        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/27/PHP-logo.svg/1200px-PHP-logo.svg.png" width="500">
+                    </a>
                     <?php
-                    if(isset($_SESSION['status_cadastro'])):
+                    if (isset($_SESSION['status_cadastro'])) :
                     ?>
-                    <div class="notification is-success">
-                        <p>Cadastro efetuado!</p>
-                        <p>Faça login informando o seu usuário e senha <a href="login.php">aqui</a></p>
-                    </div>
+                        <div class="notification is-success">
+                            <p>Cadastro efetuado!</p>
+                            <p>Faça login informando o seu usuário e senha <a href="login.php">aqui</a></p>
+                        </div>
                     <?php
                     endif;
-                    unset ($_SESSION['status_cadastro']);
+                    unset($_SESSION['status_cadastro']);
                     ?>
 
                     <?php
 
-                    if(isset($_SESSION['usuario_existe'])):
+                    if (isset($_SESSION['usuario_existe'])) :
                     ?>
-                    
-               
+
+
                     <?php
 
                     endif;
                     unset($_SESSION['usuario_existe']);
 
                     ?>
-                   
+
                     <div class="box">
                         <form action="cadastrar.php" method="POST">
                             <div class="field">
@@ -66,6 +68,7 @@ session_start();
                                 </div>
                             </div>
                             <button type="submit" class="button is-block is-link is-large is-fullwidth">Cadastrar</button>
+                            <a href="index.php">Voltar</a>
                         </form>
                     </div>
                 </div>
