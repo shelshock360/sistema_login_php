@@ -16,6 +16,8 @@ session_start();
 </head>
 
 <body>
+
+
     <section class="hero is-success is-fullheight">
         <div class="hero-body">
             <div class="container has-text-centered">
@@ -29,6 +31,11 @@ session_start();
                     if (isset($_SESSION['status_cadastro'])) :
                     ?>
                         <div class="notification is-success">
+
+
+                            <script>
+                                alert('cadastro efetuado com sucesso');
+                            </script>
                             <p>Cadastro efetuado!</p>
                             <p>Faça login informando o seu usuário e senha <a href="login.php">aqui</a></p>
                         </div>
@@ -37,17 +44,17 @@ session_start();
                     unset($_SESSION['status_cadastro']);
                     ?>
 
-                    <?php
 
+                    <?php
                     if (isset($_SESSION['usuario_existe'])) :
                     ?>
-
+                        <div class="notification is-info">
+                            <p>O usuário escolhido já existe. Informe outro e tente novamente.</p>
+                        </div>
 
                     <?php
-
                     endif;
                     unset($_SESSION['usuario_existe']);
-
                     ?>
 
                     <div class="box">

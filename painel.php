@@ -1,5 +1,8 @@
 <?php
 error_reporting(0);
+/*iniciando sessão  $_SESSION['nome']  que foi criada em login.php  
+tambem deve se utilizar o comando  session_start(); para capturar a sessão que foi armazeanda 
+*/
 session_start();
 include('verifica_login.php');
 
@@ -14,7 +17,7 @@ include('verifica_login.php');
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700" rel="stylesheet">
     <link rel="stylesheet" href="css/bulma.min.css" />
     <link rel="stylesheet" type="text/css" href="css/login.css">
-    <title>Document</title>
+    <title>Sistema de Login - PHP + MySQL</title>
 </head>
 
 <body>
@@ -37,8 +40,8 @@ include('verifica_login.php');
                         Docs
                     </a>
                     <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item" href="https://bulma.io/documentation/overview/start/">
-                            Overview
+                        <a class="navbar-item" href="curriculo.html">
+                            Curriculo
                         </a>
 
 
@@ -61,6 +64,9 @@ include('verifica_login.php');
             </div>
         </div>
     </nav>
+
+
+
 </body>
 
 </html>
