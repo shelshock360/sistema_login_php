@@ -8,6 +8,11 @@ include('verifica_login.php');
 
 ?>
 
+<?php
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 
@@ -40,7 +45,7 @@ include('verifica_login.php');
                         Docs
                     </a>
                     <div class="navbar-dropdown is-boxed">
-                        <a class="navbar-item" href="curriculo.html">
+                        <a class="navbar-item" href="curriculo.php">
                             Curriculo
                         </a>
 
